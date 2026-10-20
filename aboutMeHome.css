@@ -1,0 +1,179 @@
+
+
+/*Footer/Socials*/
+footer h3, h6 {
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    columns:3;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.social {
+    float: left;
+}
+.social_address {
+    margin-left:3em;
+    font-size: small;
+    color: gray;
+    list-style:none;
+}
+footer p {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/**Forms CSS End**/
+
+
+
+/**Nav Menu**/
+#nav_menu {
+    margin-top: 3%;
+}
+#site_title {
+    font-size:75px;
+    font-weight: bolder;
+    text-align: center;
+}
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+    margin:0;
+    padding:0;
+}
+#nav_menu ul li {
+    background-color: black;
+    float:left;
+    border: 2px solid white;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.nav1 ul li {
+    width:33%;
+}
+#home_button img {
+    width: 53px;
+    height: auto;
+    object-fit: cover;
+}
+.nav2 ul li {
+    width: 31.6%;
+}
+#nav_menu ul li a {
+    color:white;
+}
+#nav_menu ul ul li a {
+    color:black;
+}
+#nav_menu ul li a, ul ul li a {
+    display:block;
+    text-decoration: none;
+    font-weight: bold;
+}
+#nav_menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    width:14%;
+}
+#nav_menu ul ul li {
+    color:black;
+    background-color: white;
+    border:2px solid darkgray;
+    float:none;
+    position:relative;
+    width:100%;
+}
+#nav_menu ul li:hover > ul {
+    display:block;
+}
+#nav_menu ul li:hover {
+    background-color: gray;
+}
+#nav_menu ul ul li:hover {
+    background-color: gray;
+}
+#nav_menu > ul::after {
+    content:"";
+    clear:both;
+    display:block;
+}
+#nav_menu ul li:hover ul li {
+	display: block;
+	animation: navmenu 500ms forwards;
+}
+@keyframes navmenu {
+	0% {
+		opacity: 0;
+		top: 5px;
+	}
+	100% {
+		opacity: 1;
+		top: 0px;
+	}
+}
+
+
+
+/** Design of the website structure**/
+body {
+    margin:0;
+    min-height:100vh;
+    background: url(imgs/backgroundScene.jpg) no-repeat center center / cover fixed;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: black;
+}
+#Profile {
+    background-color: rgb(0 0 0 / 0.85);
+    padding:3%;
+}
+#Profile img {
+    float: right;
+}
+#Profile p, h1, h3 {
+    color: white;
+}
+#Projects, #aboutMe, #Resume {
+    background-color: white !important;
+}
+#Projects a, #aboutMe a, #Resume a {
+    color:black !important;
+}
+
+/**instances for alternating design**/
+#P1, #P2, #P3, #AM1, #AM2 {
+    height: 350px;
+    overflow:hidden;
+}
+.odd h1, .even h1 {
+    padding-top: 5%;
+    size: 60px;
+    text-align: center;
+    color: black !important;
+}
+.odd h1, .odd h4, .odd p, .even h1, .even h4, .even p {
+    text-align: center;
+} 
+.odd {
+    background-color: rgb(250 250 250 / 0.85);
+}
+.even {
+    background-color: rgb(150 150 150 / 0.85);
+}
+.odd img {
+    float:right !important;
+}
+.even img {
+    float: left;
+}
+
+.button {
+    display: block;
+}
+.button a {
+    background-color: gray;
+}
